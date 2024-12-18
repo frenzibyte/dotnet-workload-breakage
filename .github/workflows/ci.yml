@@ -27,5 +27,8 @@ jobs:
       - name: Get .NET Info
         run: dotnet --info
 
+      - name: List sdk-manifests
+        run: ls "C:\Program Files\dotnet\sdk-manifests"
+
       - name: Compile
         run: dotnet build -c Debug AndroidApp/AndroidApp.sln
