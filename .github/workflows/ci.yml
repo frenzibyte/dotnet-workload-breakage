@@ -30,8 +30,5 @@ jobs:
       - name: List sdk-manifests
         run: ls "C:\Program Files\dotnet\sdk-manifests"
 
-      - name: Update .NET
-        run: dotnet workload update --version 8.0.404
-
       - name: Compile
         run: dotnet build -c Debug AndroidApp/AndroidApp.sln
